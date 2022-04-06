@@ -76,6 +76,11 @@ body {
 
 /* HEADER */
 
+body {
+  background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
+  width: 100%;
+}
+
 .header {
 }
 .header__container {
@@ -89,21 +94,20 @@ body {
 }
 .header__logo {
 }
-.header__logo__first a {
+.header__logo__title a {
   position: relative;
   font-size: 32px;
   line-height: 110%;
   letter-spacing: 0.06em;
   color: #F1CDB3;  
 }
-.header__logo__description {
+.header__logo__subtitle {
   position: relative;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400;
   font-size: 13px;
   letter-spacing: 0.1em;
   line-height: calc(15 / 13 * 100%);
-  /* color: #FFFFFF; */
+  color: #FFFFFF;
   margin: 10px 0px 0px 4px;
 }
 .header__menu {
@@ -115,11 +119,12 @@ body {
   align-items: center;
 }
 .menu__list {
+  margin-bottom: 2px;
+
 }
 .menu__link {
   position: relative;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400;
   font-size: 15px;
   line-height: 160%;
   color: #CDCDCD;
@@ -129,11 +134,11 @@ body {
 .menu__link:hover {
   color: #FAFAFA;
 }
-.menu__list a {
+/* .menu__list a:active {
   position: relative;
   cursor: pointer;
-}
-.menu__list a::after {
+} */
+/* .menu__list a:active {
   content: "";
   position: absolute;
   width: 100%;
@@ -141,4 +146,62 @@ body {
   background-color: #F1CDB3;
   left: 0;
   top: 20px;
+} */
+
+
+/* Not only */
+
+.not_only {
+}
+.not_only__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+}
+.not_only__body {
+  margin-bottom: 80px;
+}
+.not_only__title {
+  position: relative;
+  max-width: 310px;
+  max-height: 114px;
+  font-size: 44px;
+  line-height: 130%;
+  color: #FFFFFF;
+}
+.not_only__description {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 460px;
+  font-size: 15px;
+  line-height: 160%;
+  color: #CDCDCD;
+  padding: 42px 0px 42px 0px;
+}
+.not_only__buttons {
+  display: inline-block;
+}
+.not_only__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F1CDB3;
+  border-radius: 100px;
+  min-width: 207px;
+  min-height: 52px;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #292929;
+  transition: .5s;
+}
+.not_only__button:hover {
+  background-color: #FDDCC4;
+}
+.not_only__picture {
+  background-image: url("/assets/images/start-screen-puppy.png");
+  position: relative;
+  width: 698px;
+  height: 728px;
 }
