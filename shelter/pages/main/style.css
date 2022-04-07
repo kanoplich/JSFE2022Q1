@@ -61,6 +61,7 @@ body {
   font-weight: 400;
   font-family: Georgia, 'Times New Roman', Times, serif;
   scroll-behavior: smooth;
+  cursor: url(/assets/icons/cursor_normal.svg), pointer;
 }
 .wrapper {
   min-height: 100%;
@@ -73,6 +74,7 @@ body {
   width: calc(100% - 40px);
   margin: 0 auto;
 }
+
 
 /* HEADER */
 
@@ -133,6 +135,7 @@ body {
 }
 .menu__link:hover {
   color: #FAFAFA;
+  cursor: url(/assets/icons/cursor_focus.svg), auto;
 }
 /* .menu__list a:active {
   position: relative;
@@ -205,3 +208,215 @@ body {
   width: 698px;
   height: 728px;
 }
+
+
+/* About */
+
+.about {
+  min-height: 588px;
+  background-color: #FFFFFF;
+}
+.about__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 850px;
+  padding-top: 80px;
+}
+.about__picture {
+  background-image: url("/assets/images/about-pets.png");
+  position: relative;
+  width: 300px;
+  height: 408px;
+}
+.about__body {
+
+}
+.about__title {
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  max-width: 370px;
+  max-height: 90px;
+}
+.about__description p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 160%;
+  color: #4C4C4C;
+  max-width: 430px;
+  margin-top: 25px;
+}
+
+
+/* Our Friends */
+
+.friends {
+  min-height: 877px;
+  background-color: #F6F6F6;
+}
+.friends__container {
+}
+.container {
+}
+.friends__title {
+  text-align: center;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  padding-top: 80px;
+}
+.friends__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+}
+.friends__cards__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 90px;
+}
+.friends__cards {
+  width: 270px;
+  height: 435px;
+  background-color: #FAFAFA;
+  border-radius: 9px;
+  transition: .5s;
+}
+.friends__cards a {
+  position: relative;
+  cursor: pointer;
+  transition: color;
+  text-decoration: none;
+}
+.friends__cards:hover {
+  background-color: #FFFFFF;
+}
+.friends__cards h3 {
+  font-size: 20px;
+  line-height: calc(23 / 20 * 100%);
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #545454;
+  margin-top: 30px;
+}
+.cards1 {
+  background-image: url("/assets/images/katrine.png");
+  border-radius: 9px 9px 0px 0px;
+  position: relative;
+  background-color: #FAFAFA;
+  width: 270px;
+  height: 270px;
+}
+.cards1:hover {
+  background-color: #FFFFFF;
+}
+.cards2 {
+  background-image: url("/assets/images/jennifer.png");
+  border-radius: 9px 9px 0px 0px;
+  background-color: #FAFAFA;
+  position: relative;
+  width: 270px;
+  height: 270px;
+}
+.cards3 {
+  background-image: url("/assets/images/woody.png");
+  border-radius: 9px 9px 0px 0px;
+  background-color: #FAFAFA;
+  position: relative;
+  width: 270px;
+  height: 270px;
+}
+.friends__cards__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 2px solid #F1CDB3;
+  margin: 30px 41.5px;
+  border-radius: 100px;
+  min-width: 187px;
+  min-height: 52px;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #292929;
+  transition: .5s;
+}
+.friends__cards__button:hover {
+  background-color: #FDDCC4;
+  border: 2px solid #FDDCC4;
+}
+.right-button {
+  display: inline-block;
+  border: 2px solid #F1CDB3;
+  box-sizing: border-box;
+  border-radius: 100px;
+  width: 52px;
+  height: 52px;
+  transition: .5s;
+}
+.arrow-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/assets/icons/button_right.svg");
+  width: 14px;
+  height: 6px;
+  margin-left: 16px;
+}
+.right-button:hover {
+  border: 2px solid #FDDCC4;
+  background-color: #FDDCC4;
+}
+.friends__buttons {
+}
+.left-button {
+  display: inline-block;
+  border: 2px solid #F1CDB3;
+  box-sizing: border-box;
+  border-radius: 100px;
+  width: 52px;
+  height: 52px;
+  transition: .5s;
+}
+.arrow-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/assets/icons/button_left.svg");
+  width: 14px;
+  height: 6px;
+  margin-left: 16px;
+}
+.left-button:hover {
+  border: 2px solid #FDDCC4;
+  background-color: #FDDCC4;
+}
+.friends__button__primary {
+  display: inline-block;
+  margin: 60px 0px 0px 470px;
+}
+.button__primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F1CDB3;
+  border-radius: 100px;
+  min-width: 261px;
+  min-height: 52px;
+  font-size: 17px;
+  line-height: calc(22.1 / 17 * 100%);
+  letter-spacing: 0.06em;
+  color: #292929;
+  transition: .5s;
+}
+.button__primary:hover {
+  background-color: #FDDCC4;
+}
+
+
+/* Help */
+
