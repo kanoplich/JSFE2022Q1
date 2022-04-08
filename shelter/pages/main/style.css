@@ -433,13 +433,12 @@ body {
   padding-bottom: 60px;
 }
 .help__icon {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, 113px);
-  grid-column-gap: 120px;
-  grid-row-gap: 55px;
+  display: flex; 
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 55px 120px;
+  
 }
 .help__item {
   font-size: 20px;
@@ -448,87 +447,114 @@ body {
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-between;
-  align-items: center;
-  text-align: center;
+  align-items: center; 
+  height: 113px;
+  width: auto;
 }
 .item1 {
-  width: 83px;
-  height: 113px;
-}
-.item1__picture {
   background-image: url("/assets/icons/icon-pet-food.svg");
   width: 60px;
   height: 60px;
 }
 .item2 {
-  width: 150px;
-  height: 113px;
-}
-.item2__picture {
   background-image: url("/assets/icons/icon-transportation.svg");
   width: 60px;
   height: 60px;
 }
 .item3 {
-  width: 60px;
-  height: 113px;
-}
-.item3__picture {
   background-image: url("/assets/icons/icon-toys.svg");
   width: 60px;
   height: 60px;
 }
 .item4 {
-  width: 153px;
-  height: 113px;
-}
-.item4__picture {
   background-image: url("/assets/icons/icon-bowls-and-cups.svg");
   width: 60px;
   height: 60px;
 }
 .item5 {
-  width: 101px;
-  height: 113px;
-}
-.item5__picture {
   background-image: url("/assets/icons/icon-shampoos.svg");
   width: 60px;
   height: 60px;
 }
 .item6 {
-  width: 89px;
-  height: 113px;
-}
-.item6__picture {
   background-image: url("/assets/icons/icon-vitamins.svg");
   width: 60px;
   height: 60px;
 }
 .item7 {
-  width: 101px;
-  height: 113px;
-}
-.item7__picture {
   background-image: url("/assets/icons/icon-medicines.svg");
   width: 60px;
   height: 60px;
 }
 .item8 {
-  width: 166px;
-  height: 113px;
-}
-.item8__picture {
   background-image: url("/assets/icons/icon-collars-leashes.svg");
   width: 60px;
   height: 60px;
 }
 .item9 {
-  width: 144px;
-  height: 113px;
-}
-.item9__picture {
   background-image: url("/assets/icons/icon-sleeping-area.svg");
   width: 60px;
   height: 60px;
+}
+
+
+/* In addition */
+
+.addition {
+  min-height: 462px;
+  background-color: #F6F6F6;
+  padding-top: 80px;
+}
+.addition__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 915px;
+  gap: 30px;
+}
+.addition__picture {
+  position: relative;
+  background-image: url("/assets/images/donation-dog.png");
+  width: 505px;
+  height: 261px;
+}
+.addition__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 380px;
+  gap: 20px;
+}
+.addition__title {
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+}
+.addition__subtitle {
+  line-height: 110%;
+  letter-spacing: 0.06em;
+}
+.addition__button {
+  display: inline-block;
+}
+.addition__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F1CDB3;
+  border-radius: 9px;
+  min-width: 349px;
+  min-height: 43px;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+.addition__description {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 12px;
+  line-height: calc(18 / 12 * 100%);
+  color: #B2B2B2;
+  height: 72px;
 }
