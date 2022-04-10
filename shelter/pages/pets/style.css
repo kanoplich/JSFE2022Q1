@@ -136,6 +136,7 @@ body {
 /* Our friends */
 
 .friends {
+  margin-top: 120px;
   min-height: 1342px;
   background-color: #F6F6F6;
 }
