@@ -138,8 +138,6 @@ body {
   min-height: 1342px;
   background-color: #F6F6F6;
 }
-.friends__container {
-}
 .friends__title {
   text-align: center;
   font-size: 35px;
@@ -344,8 +342,6 @@ body {
   padding-top: 40px;
   background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
   width: 100%;
-}
-.footer__container {
 }
 .footer__body {
   display: flex;

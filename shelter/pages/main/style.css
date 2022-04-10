@@ -132,8 +132,6 @@ body {
 
 /* Not only */
 
-.not_only {
-}
 .not_only__container {
   display: flex;
   justify-content: space-between;
@@ -206,9 +204,6 @@ body {
   width: 300px;
   height: 408px;
 }
-.about__body {
-
-}
 .about__title {
   font-size: 35px;
   line-height: 130%;
@@ -231,8 +226,6 @@ body {
 .friends {
   min-height: 877px;
   background-color: #F6F6F6;
-}
-.friends__container {
 }
 .friends__title {
   text-align: center;
@@ -336,8 +329,6 @@ body {
   border: 2px solid #FDDCC4;
   background-color: #FDDCC4;
 }
-.friends__buttons {
-}
 .left-button {
   display: inline-block;
   border: 2px solid #F1CDB3;
@@ -389,8 +380,6 @@ body {
   min-height: 611px;
   background-color: #FFFFFF;
 }
-.help__container {
-}
 .help__title {
   text-align: center;
   font-size: 35px;
@@ -405,7 +394,6 @@ body {
   align-items: center;
   flex-wrap: wrap;
   gap: 55px 120px;
-  
 }
 .help__item {
   font-size: 20px;
@@ -541,8 +529,6 @@ body {
   padding-top: 40px;
   background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
   width: 100%;
-}
-.footer__container {
 }
 .footer__body {
   display: flex;
