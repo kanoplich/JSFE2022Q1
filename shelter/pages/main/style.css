@@ -1,27 +1,27 @@
 @font-face {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  src: url("/assets/fonts/georgia-regular.ttf");
+  src: url("../../assets/fonts/georgia-regular.ttf");
 }
 
 @font-face {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  src: url("/assets/fonts/georgia-bold.ttf");
+  src: url("../../assets/fonts/georgia-bold.ttf");
   font-weight: 700;
 }
 
 @font-face {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  src: url("/assets/fonts/georgia-italic.ttf");
+  src: url("../../assets/fonts/georgia-italic.ttf");
 }
 
 @font-face {
   font-family: Arial, Helvetica, sans-serif;
-  src: url("/assets/fonts/arial-regular.ttf");
+  src: url("../../assets/fonts/arial-regular.ttf");
 }
 
 @font-face {
   font-family: Arial, Helvetica, sans-serif;
-  src: url("/assets/fonts/arial-italic.ttf");
+  src: url("../../assets/fonts/arial-italic.ttf");
 }
 
 *,
@@ -178,7 +178,7 @@ body {
   background-color: #FDDCC4;
 }
 .not_only__picture {
-  background-image: url("/assets/images/start-screen-puppy.png");
+  background-image: url("../../assets/images/start-screen-puppy.png");
   position: relative;
   width: 698px;
   height: 728px;
@@ -199,7 +199,7 @@ body {
   padding-top: 80px;
 }
 .about__picture {
-  background-image: url("/assets/images/about-pets.png");
+  background-image: url("../../assets/images/about-pets.png");
   position: relative;
   width: 300px;
   height: 408px;
@@ -262,14 +262,14 @@ body {
   margin-top: 30px;
 }
 .cards1 {
-  background-image: url("/assets/images/katrine.png");
+  background-image: url("../../assets/images/katrine.png");
   border-radius: 9px 9px 0px 0px;
   position: relative;
   width: 270px;
   height: 270px;
 }
 .cards2 {
-  background-image: url("/assets/images/jennifer.png");
+  background-image: url("../../assets/images/jennifer.png");
   border-radius: 9px 9px 0px 0px;
   background-color: #FAFAFA;
   position: relative;
@@ -277,7 +277,7 @@ body {
   height: 270px;
 }
 .cards3 {
-  background-image: url("/assets/images/woody.png");
+  background-image: url("../../assets/images/woody.png");
   border-radius: 9px 9px 0px 0px;
   background-color: #FAFAFA;
   position: relative;
@@ -321,7 +321,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("/assets/icons/button_right.svg");
+  background-image: url("../../assets/icons/button_right.svg");
   width: 14px;
   height: 6px;
   margin-left: 16px;
@@ -344,7 +344,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("/assets/icons/button_left.svg");
+  background-image: url("../../assets/icons/button_left.svg");
   width: 14px;
   height: 6px;
   margin-left: 16px;
@@ -409,47 +409,47 @@ body {
   width: auto;
 }
 .item1 {
-  background-image: url("/assets/icons/icon-pet-food.svg");
+  background-image: url("../../assets/icons/icon-pet-food.svg");
   width: 60px;
   height: 60px;
 }
 .item2 {
-  background-image: url("/assets/icons/icon-transportation.svg");
+  background-image: url("../../assets/icons/icon-transportation.svg");
   width: 60px;
   height: 60px;
 }
 .item3 {
-  background-image: url("/assets/icons/icon-toys.svg");
+  background-image: url("../../assets/icons/icon-toys.svg");
   width: 60px;
   height: 60px;
 }
 .item4 {
-  background-image: url("/assets/icons/icon-bowls-and-cups.svg");
+  background-image: url("../../assets/icons/icon-bowls-and-cups.svg");
   width: 60px;
   height: 60px;
 }
 .item5 {
-  background-image: url("/assets/icons/icon-shampoos.svg");
+  background-image: url("../../assets/icons/icon-shampoos.svg");
   width: 60px;
   height: 60px;
 }
 .item6 {
-  background-image: url("/assets/icons/icon-vitamins.svg");
+  background-image: url("../../assets/icons/icon-vitamins.svg");
   width: 60px;
   height: 60px;
 }
 .item7 {
-  background-image: url("/assets/icons/icon-medicines.svg");
+  background-image: url("../../assets/icons/icon-medicines.svg");
   width: 60px;
   height: 60px;
 }
 .item8 {
-  background-image: url("/assets/icons/icon-collars-leashes.svg");
+  background-image: url("../../assets/icons/icon-collars-leashes.svg");
   width: 60px;
   height: 60px;
 }
 .item9 {
-  background-image: url("/assets/icons/icon-sleeping-area.svg");
+  background-image: url("../../assets/icons/icon-sleeping-area.svg");
   width: 60px;
   height: 60px;
 }
@@ -471,7 +471,7 @@ body {
 }
 .addition__picture {
   position: relative;
-  background-image: url("/assets/images/donation-dog.png");
+  background-image: url("../../assets/images/donation-dog.png");
   width: 505px;
   height: 261px;
 }
@@ -510,7 +510,7 @@ body {
   gap: 15px;
 }
 .addition__card__image {
-  background-image: url("/assets/icons/credit-card.svg");
+  background-image: url("../../assets/icons/credit-card.svg");
   width: 30px;
   height: 23px;
 }
@@ -558,17 +558,17 @@ body {
   margin-top: 2px;
 }
 .footer__title__email__image {
-  background-image: url("/assets/icons/mail.svg");
+  background-image: url("../../assets/icons/mail.svg");
   width: 40px;
   height: 26px;
 }
 .footer__title__tel__image {
-  background-image: url("/assets/icons/phone.svg");
+  background-image: url("../../assets/icons/phone.svg");
   width: 40px;
   height: 32px;
 }
 .footer__title__address__image {
-  background-image: url("/assets/icons/pin.svg");
+  background-image: url("../../assets/icons/pin.svg");
   width: 22px;
   height: 32px;
 }
@@ -606,7 +606,7 @@ body {
   margin-top: -8px;
 }
 .footer__picture {
-  background-image: url("/assets/images/footer-puppy.png");
+  background-image: url("../../assets/images/footer-puppy.png");
   width: 300px;
   height: 310px;
 }
