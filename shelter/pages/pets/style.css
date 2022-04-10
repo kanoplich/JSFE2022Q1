@@ -78,9 +78,10 @@ body {
 /* Header */
 .header {
   background: #FFFFFF;
-  /* position: fixed;
+  position: fixed;
   top: 0%;
-  width: 100%; */
+  width: 100%;
+  z-index: 1;
 }
 .header__container {
   position: relative;
