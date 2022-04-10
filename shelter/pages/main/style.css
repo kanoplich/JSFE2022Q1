@@ -61,7 +61,6 @@ body {
   font-weight: 400;
   font-family: Georgia, 'Times New Roman', Times, serif;
   scroll-behavior: smooth;
-  cursor: url(/assets/icons/cursor_normal.svg), pointer;
 }
 .wrapper {
   min-height: 100%;
@@ -125,7 +124,6 @@ body {
 }
 .menu__link:hover {
   color: #FAFAFA;
-  cursor: url(/assets/icons/cursor_focus.svg), auto;
 }
 .active {
   border-bottom: 3px solid #F1CDB3;
@@ -262,15 +260,6 @@ body {
   border-radius: 9px;
   transition: .5s;
 }
-.friends__cards a {
-  position: relative;
-  cursor: pointer;
-  transition: color;
-  text-decoration: none;
-}
-.friends__cards:hover {
-  background-color: #FFFFFF;
-}
 .friends__cards h3 {
   font-size: 20px;
   line-height: calc(23 / 20 * 100%);
@@ -283,12 +272,8 @@ body {
   background-image: url("/assets/images/katrine.png");
   border-radius: 9px 9px 0px 0px;
   position: relative;
-  background-color: #FAFAFA;
   width: 270px;
   height: 270px;
-}
-.cards1:hover {
-  background-color: #FFFFFF;
 }
 .cards2 {
   background-image: url("/assets/images/jennifer.png");
@@ -322,9 +307,12 @@ body {
   color: #292929;
   transition: .5s;
 }
-.friends__cards__button:hover {
+.friends__cards:hover .friends__cards__button{
   background-color: #FDDCC4;
   border: 2px solid #FDDCC4;
+}
+.friends__cards:hover {
+  background-color: #FFFFFF;
 }
 .right-button {
   display: inline-block;

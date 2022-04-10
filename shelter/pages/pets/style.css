@@ -61,7 +61,6 @@ body {
   font-weight: 400;
   font-family: Georgia, 'Times New Roman', Times, serif;
   scroll-behavior: smooth;
-  cursor: url(/assets/icons/cursor_normal.svg), pointer;
 }
 .wrapper {
   min-height: 100%;
@@ -126,7 +125,6 @@ body {
 }
 .menu__link:hover {
   color: #292929;
-  cursor: url(/assets/icons/cursor_focus.svg), auto;
 }
 .active {
   border-bottom: 3px solid #F1CDB3;
@@ -193,9 +191,12 @@ body {
   color: #292929;
   transition: .5s;
 }
-.friends__cards__button:hover {
+.friends__cards:hover .friends__cards__button{
   background-color: #FDDCC4;
   border: 2px solid #FDDCC4;
+}
+.friends__cards:hover {
+  background-color: #FFFFFF;
 }
 .cards1 {
   background-image: url("/assets/images/katrine.png");
@@ -269,6 +270,7 @@ body {
   gap: 20px;
 }
 .friends__button {
+  cursor: pointer;
   font-family: Georgia;
   font-size: 20px;
   line-height: 115%;
@@ -276,6 +278,7 @@ body {
   color: #292929;
   border: 2px solid #F1CDB3;
   box-sizing: border-box;
+  background-color: inherit;
   border-radius: 100px;
   width: 52px;
   height: 52px;
@@ -284,8 +287,13 @@ body {
 .friends__button:hover {
   background-color: #F1CDB3;
 }
-.friends__button:disabled {
+.disabled {
+  cursor: default;
   border: 2px solid #CDCDCD;
+  background-color: inherit;
+}
+.disabled:hover {
+  background-color: #F6F6F6;
 }
 .arrow-left-left {
   display: flex;
@@ -305,7 +313,9 @@ body {
   height: 11px;
   margin-left: 18px;
 }
-.arrow-central {
+.friends__active {
+  margin-top: -2px;
+  background-color: #F1CDB3;
 }
 .arrow-right {
   display: flex;
