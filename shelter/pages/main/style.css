@@ -308,6 +308,7 @@ body {
   background-color: #FFFFFF;
 }
 .right-button {
+  cursor: pointer;
   display: inline-block;
   border: 2px solid #F1CDB3;
   box-sizing: border-box;
@@ -330,6 +331,7 @@ body {
   background-color: #FDDCC4;
 }
 .left-button {
+  cursor: pointer;
   display: inline-block;
   border: 2px solid #F1CDB3;
   box-sizing: border-box;
