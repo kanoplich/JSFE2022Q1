@@ -78,8 +78,9 @@ body {
 /* HEADER */
 
 body {
-  background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
-  width: 100%;
+  background-image: url("../../assets/images/start-screen-gradient-background.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 .header__container {
   position: relative;
@@ -508,6 +509,10 @@ body {
   letter-spacing: 0.06em;
   color: #545454;
   gap: 15px;
+  transition: .5s;
+}
+.addition__card:hover {
+  background-color: #FDDCC4;
 }
 .addition__card__image {
   background-image: url("../../assets/icons/credit-card.svg");
@@ -529,8 +534,9 @@ body {
 .footer {
   min-height: 350px;
   padding-top: 40px;
-  background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
-  width: 100%;
+  background-image: url("../../assets/images/start-screen-gradient-background.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 .footer__body {
   display: flex;
