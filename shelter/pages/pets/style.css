@@ -342,8 +342,9 @@ body {
 .footer {
   min-height: 350px;
   padding-top: 40px;
-  background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
-  width: 100%;
+  background-image: url("../../assets/images/start-screen-gradient-background.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 .footer__body {
   display: flex;
@@ -422,4 +423,50 @@ body {
   background-image: url("../../assets/images/footer-puppy.png");
   width: 300px;
   height: 310px;
+}
+
+
+
+
+/* Media */
+
+@media (max-width: 1279px) {
+  .container {
+    max-width: 708px;
+    width: calc(100% - 30px);
+    margin: 0 auto;
+  }
+
+  .header__container {
+    height: 120px;
+    margin-bottom: 30px;
+  }
+  .friends {
+    min-height: 1733px;
+  }
+  .friends__body {
+    margin-top: 30px;
+  }
+  .friends__cards:nth-child(1n + 7) {
+    display: none;
+  }
+  .friends__cards__body {
+    justify-content: center;
+  }
+  .friends__buttons {
+    margin-top: 40px;
+  }
+  .footer {
+    min-height: 639px;
+    padding-top: 15px;
+    background-size: 150%;
+  }
+  .footer__body {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+  }
+  .footer__picture {
+    align-items: center;
+  }
 }

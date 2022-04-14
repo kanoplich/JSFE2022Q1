@@ -80,7 +80,7 @@ body {
 body {
   background-image: url("../../assets/images/start-screen-gradient-background.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
 }
 .header__container {
   position: relative;
@@ -180,7 +180,7 @@ body {
 }
 .not_only__picture {
   background-image: url("../../assets/images/start-screen-puppy.png");
-  position: relative;
+  position: relative;  
   width: 698px;
   height: 728px;
 }
@@ -538,7 +538,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  height: 310px;
+  min-height: 310px;
 }
 .footer__title__first {
   display: flex;
@@ -611,4 +611,75 @@ body {
   background-image: url("../../assets/images/footer-puppy.png");
   width: 300px;
   height: 310px;
+}
+
+
+
+@media (max-width: 1279px){
+  body {
+    background-size: 100% 200%;
+  }
+  .container {
+    max-width: 708px;
+    width: calc(100% - 30px);
+    margin: 0 auto;
+  }
+  .header__container {
+    height: 120px;
+    margin-bottom: 30px;
+  }
+  .not_only__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .not_only__buttons {
+    display: flex;
+    justify-content: center;
+  }
+  .not_only__picture {
+    background-image: url("../../assets/images/start-screen-puppy2.png");
+    width: 569px;
+    height: 593px;
+    margin-top: 20px;
+    left: 70px;
+  }
+  .about__container {
+    flex-direction: column-reverse;
+  }
+  .about__picture {
+    margin: 80px 0 100px 0;
+  }
+  .friends__cards__body {
+    gap: 40px;
+  }
+  .friends__cards:last-child {
+    display: none;
+  }
+  .help__icon {
+    display: grid;
+    grid-template-columns: repeat(3, 170px);
+    grid-template-rows: repeat(3, 113px);
+    gap: 55px 60px;
+    margin-bottom: 100px;
+  }
+  .addition__container {
+    flex-direction: column-reverse;
+  }
+  .addition__picture {
+    margin: 30px 0 100px 0;
+  }
+  .footer {
+    padding-top: 15px;
+    background-size: 150%;
+  }
+  .footer__body {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+  }
+  .footer__picture {
+    align-items: center;
+  }
 }
