@@ -470,3 +470,73 @@ body {
     align-items: center;
   }
 }
+
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 300px;
+    width: calc(100% - 10px);
+    margin: 0 auto;
+  }
+  .menu__list {
+    display: none;
+  }
+  .friends {
+    min-height: 1649px;
+  }
+  .friends__title {
+    height: 64px;
+    letter-spacing: 0.06em;
+    font-size: 25px;
+    padding-top: 40px;
+    margin-bottom: 84px;
+  }
+  .friends__cards:nth-child(1n + 4) {
+    display: none;
+  }
+  .friends__buttons {
+    gap: 10px;
+  }
+  .footer {
+    min-height: 809px;
+    background-size: 400%;
+  }
+  .footer__title {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 0.06em;
+    font-size: 25px;
+  }
+  .footer__title br {
+    display: none;
+  }
+  .footer__title__email {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer__title__tel {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer__title__second {
+    width: 270px;
+    margin: -20px 0 0 0;
+  }
+  .footer__address__first {
+    width: 300px;
+    margin-top: 0;
+    margin-left: -15px;
+  }
+  .footer__address__second {
+    width: 300px;
+    margin-top: -2px;
+    margin-left: -15px;
+  }
+  .footer__picture {
+    background-image: url("../../assets/images/footer-puppy2.png");
+    width: 260px;
+    height: 269px;
+    margin-top: -20px;
+  }
+}
