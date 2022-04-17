@@ -676,7 +676,7 @@ body {
   }
   .footer {
     padding-top: 15px;
-    background-size: 150%;
+    background-size: 120%;
   }
   .footer__body {
     flex-wrap: wrap;
@@ -751,7 +751,7 @@ body {
     position: fixed;
     overflow: auto;
     background-color: #292929;
-    top: -100%;
+    top: -200%;
     right: 0;
     min-width: 320px;
     height: 823px;
@@ -986,7 +986,8 @@ body {
     margin: 30px 0 40px 0;
   }
   .footer {
-    background-size: 400%;
+    background-image: url("../../assets/images/footer-gradient-background.png");
+    background-size: 110%;
   }
   .footer__title {
     text-align: center;

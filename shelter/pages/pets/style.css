@@ -108,6 +108,12 @@ body {
   margin: 10px 0px 0px 4px;
   z-index: 3;
 }
+.header__burger {
+  display: none;
+}
+.header__burger__menu {
+  display: none;
+}
 .menu__item {
   position: relative;
   display: flex;
@@ -440,8 +446,8 @@ body {
   }
 
   .header__container {
-    height: 120px;
-    margin-bottom: 30px;
+    height: 90px;
+    margin-top: 15px;
   }
   .friends {
     min-height: 1733px;
@@ -461,7 +467,7 @@ body {
   .footer {
     min-height: 639px;
     padding-top: 15px;
-    background-size: 150%;
+    background-size: 120%;
   }
   .footer__body {
     flex-wrap: wrap;
@@ -469,6 +475,7 @@ body {
     gap: 60px;
   }
   .footer__picture {
+    margin-top: 4px;
     align-items: center;
   }
 }
@@ -482,6 +489,11 @@ body {
   }
   .menu__list {
     display: none;
+  }
+
+  .header__container {
+    height: 90px;
+    margin-top: 15px;
   }
   .header__burger {
     position: relative;
@@ -534,7 +546,7 @@ body {
     position: fixed;
     overflow: auto;
     background-color: #292929;
-    top: -110%;
+    top: -200%;
     right: 0;
     min-width: 320px;
     height: 823px;
@@ -579,7 +591,7 @@ body {
     height: 64px;
     letter-spacing: 0.06em;
     font-size: 25px;
-    padding-top: 40px;
+    padding-top: 42px;
     margin-bottom: 84px;
   }
   .friends__cards:nth-child(1n + 4) {
@@ -589,8 +601,9 @@ body {
     gap: 10px;
   }
   .footer {
-    min-height: 809px;
-    background-size: 400%;
+    height: 809px;
+    background-image: url("../../assets/images/footer-gradient-background.png");
+    background-size: 100%;
   }
   .footer__title {
     text-align: center;
