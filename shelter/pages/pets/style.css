@@ -96,6 +96,7 @@ body {
   line-height: 110%;
   letter-spacing: 0.06em;
   color: #545454;  
+  z-index: 3;
 }
 .header__logo__subtitle {
   position: relative;
@@ -105,6 +106,7 @@ body {
   line-height: calc(15 / 13 * 100%);
   color: #292929;
   margin: 10px 0px 0px 4px;
+  z-index: 3;
 }
 .menu__item {
   position: relative;
@@ -526,6 +528,50 @@ body {
   .header__burger.active span {
     transform: rotate(90deg);
   }
+
+
+  .header__burger__menu {
+    position: fixed;
+    overflow: auto;
+    background-color: #292929;
+    top: -110%;
+    right: 0;
+    min-width: 320px;
+    height: 823px;
+    display: flex;
+    flex-direction: column;
+    transition: all 1s ease 0s;
+  }
+  .header__burger__menu.active {
+    top: 0;
+    right: 0;
+    transition: all .7s ease 0s;
+  }
+  .menu__burger__item {
+    text-align: center;
+    margin-top: 250px;
+  }
+  .menu__burger__list {
+    margin-bottom: 41px;
+  }
+  .menu__burger__link {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    line-height: 160%;
+    color: #CDCDCD;
+    transition: .5s;
+  }
+  .menu__burger__link:hover {
+    color: #FAFAFA;
+  }
+  .menu__burger__link.active {
+    border-bottom: 3px solid #F1CDB3;
+    padding-bottom: 5px;
+  }
+
+
+
   .friends {
     min-height: 1649px;
   }

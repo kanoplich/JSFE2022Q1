@@ -81,6 +81,7 @@ body {
   background-image: url("../../assets/images/start-screen-gradient-background.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  z-index: 2;
 }
 .header__container {
   position: relative;
@@ -91,6 +92,7 @@ body {
 }
 .header__logo__title a {
   position: relative;
+  z-index: 3;
   font-size: 32px;
   line-height: 110%;
   letter-spacing: 0.06em;
@@ -104,8 +106,12 @@ body {
   line-height: calc(15 / 13 * 100%);
   color: #FFFFFF;
   margin: 10px 0px 0px 4px;
+  z-index: 3;
 }
 .header__burger {
+  display: none;
+}
+.header__burger__menu {
   display: none;
 }
 .menu__item {
@@ -204,7 +210,6 @@ body {
 }
 .about__picture {
   background-image: url("../../assets/images/about-pets.png");
-  position: relative;
   width: 300px;
   height: 408px;
 }
@@ -268,7 +273,6 @@ body {
 .cards1 {
   background-image: url("../../assets/images/katrine.png");
   border-radius: 9px 9px 0px 0px;
-  position: relative;
   width: 270px;
   height: 270px;
 }
@@ -276,7 +280,6 @@ body {
   background-image: url("../../assets/images/jennifer.png");
   border-radius: 9px 9px 0px 0px;
   background-color: #FAFAFA;
-  position: relative;
   width: 270px;
   height: 270px;
 }
@@ -284,7 +287,6 @@ body {
   background-image: url("../../assets/images/woody.png");
   border-radius: 9px 9px 0px 0px;
   background-color: #FAFAFA;
-  position: relative;
   width: 270px;
   height: 270px;
 }
@@ -473,7 +475,6 @@ body {
   gap: 30px;
 }
 .addition__picture {
-  position: relative;
   background-image: url("../../assets/images/donation-dog.png");
   width: 505px;
   height: 261px;
@@ -746,6 +747,48 @@ body {
   .not_only__body {
     margin: 30px 0 85px 0;
   }
+  .header__burger__menu {
+    position: fixed;
+    overflow: auto;
+    background-color: #292929;
+    top: -100%;
+    right: 0;
+    min-width: 320px;
+    height: 823px;
+    display: flex;
+    flex-direction: column;
+    transition: all 1s ease 0s;
+  }
+  .header__burger__menu.active {
+    top: 0;
+    right: 0;
+    transition: all .7s ease 0s;
+  }
+  .menu__burger__item {
+    text-align: center;
+    margin-top: 250px;
+  }
+  .menu__burger__list {
+    margin-bottom: 41px;
+  }
+  .menu__burger__link {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    line-height: 160%;
+    color: #CDCDCD;
+    transition: .5s;
+  }
+  .menu__burger__link:hover {
+    color: #FAFAFA;
+  }
+  .menu__burger__link.active {
+    border-bottom: 3px solid #F1CDB3;
+    padding-bottom: 5px;
+  }
+
+
+
   .not_only__title {
     text-align: center;
     margin-left: auto;
@@ -754,9 +797,11 @@ body {
     height: 64px;
     letter-spacing: 0.06em;
     font-size: 25px;
+    z-index: -1;
   }
   .not_only__description {
     text-align: center;
+    z-index: -1;
   }
   .not_only__picture {
     background-image: url("../../assets/images/start-screen-puppy3.png");
@@ -765,6 +810,7 @@ body {
     width: 260px;
     height: 272px;
     left: 20px;
+    z-index: -1;
   }
   .about__container {
     padding-top: 42px;
@@ -787,7 +833,6 @@ body {
   }
   .about__picture {
     background-image: url("../../assets/images/about-pets2.png");
-    position: relative;
     width: 260px;
     height: 354px;
   }
@@ -933,7 +978,6 @@ body {
     max-width: 280px;
   }
   .addition__picture {
-    position: relative;
     background-image: url("../../assets/images/donation-dog2.png");
     width: 260px;
     height: 135px;
