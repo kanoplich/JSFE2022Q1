@@ -1,11 +1,18 @@
-const burgerBtn = document.querySelector('.header__burger');
-const menuBurger = document.querySelector('.header__burger__menu');
+const BURGER_BTN = document.querySelector('.header__burger');
+const MENU = document.querySelector('.header__burger__menu');
 
-const burger = (burgerBtn, menuBurger) => {
-  burgerBtn.addEventListener('click', function() {
-    this.classList.toggle('active');
-    menuBurger.classList.toggle('active');
-  });
-}
+const burger = () => {
+  BURGER_BTN.classList.toggle('active');
+  MENU.classList.toggle('active');
+};
 
-burger(burgerBtn, menuBurger);
+const menu_burger = () => {
+  MENU.classList.toggle('active');
+  BURGER_BTN.classList.toggle('active');
+};
+
+BURGER_BTN.addEventListener('click', burger);
+MENU.addEventListener('click', menu_burger);
+
+burger();
+menu_burger();
