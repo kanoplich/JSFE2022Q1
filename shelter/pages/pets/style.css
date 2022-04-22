@@ -73,7 +73,11 @@ body {
   width: calc(100% - 40px);
   margin: 0 auto;
 }
-
+.disabled-scroll {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
 
 /* Header */
 .header {
@@ -572,12 +576,10 @@ body {
   }
   .shadow_page {
     display: block;
-    right: -200%;
-    top: 0;
   }
   .shadow_page.active{
     top: 0;
-    right: 0;
+    left: 0;
     position: absolute;
     background-image: url("../../assets/images/start-screen-gradient-background.png");
     width: 100vw;
