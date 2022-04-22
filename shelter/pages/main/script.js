@@ -10,15 +10,16 @@ const burger = () => {
   BODY.classList.toggle('disabled-scroll');
 };
 
-const menu_burger = () => {
-  MENU.classList.toggle('active');
-  BURGER_BTN.classList.toggle('active');
-  SHADOW.classList.toggle('active');
-  BODY.classList.toggle('disabled-scroll');
+const removeClass = () => {
+  BURGER_BTN.classList.remove('active');
+  MENU.classList.remove('active');
+  SHADOW.classList.remove('active');
+  BODY.classList.remove('disabled-scroll');
 };
 
 BURGER_BTN.addEventListener('click', burger);
-MENU.addEventListener('click', menu_burger);
+MENU.addEventListener('click', burger);
+SHADOW.addEventListener('click', burger);
 
 burger();
-menu_burger();
+removeClass();

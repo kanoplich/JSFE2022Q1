@@ -548,24 +548,21 @@ body {
     transform: rotate(90deg);
     top: 10px;
     left: 10px;
-    background-color: #F1CDB3;
   }
   .header__burger.active:after {
     transform: rotate(90deg);
     bottom: 10px;
     left: -10px;
-    background-color: #F1CDB3;
   }
   .header__burger.active span {
     transform: rotate(90deg);
-    background-color: #F1CDB3;
   }
 
 
   .header__burger__menu {
     position: fixed;
     overflow: auto;
-    background-color: #292929;
+    background-color: #FFFFFF;
     top: 0;
     right: -200%;
     width: 320px;
@@ -581,7 +578,7 @@ body {
     top: 0;
     left: 0;
     position: absolute;
-    background-image: url("../../assets/images/start-screen-gradient-background.png");
+    background: rgba(41, 41, 41, 0.6);
     width: 100vw;
     height: 100vh;
   }
@@ -600,7 +597,7 @@ body {
     font-size: 32px;
     line-height: 110%;
     letter-spacing: 0.06em;
-    color: #F1CDB3;  
+    color: #545454;  
     margin-right: 115px;
   }
 
@@ -610,7 +607,7 @@ body {
     font-size: 13px;
     letter-spacing: 0.1em;
     line-height: calc(15 / 13 * 100%);
-    color: #FFFFFF;
+    color: #292929;
     margin: 10px 115px 160px 4px;
   }
   .menu__burger__item {
