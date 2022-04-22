@@ -1,14 +1,18 @@
 const BURGER_BTN = document.querySelector('.header__burger');
 const MENU = document.querySelector('.header__burger__menu');
+const SHADOW = document.querySelector('.shadow_page');
 
 const burger = () => {
   BURGER_BTN.classList.toggle('active');
   MENU.classList.toggle('active');
+  SHADOW.classList.toggle('active');
 };
 
 const menu_burger = () => {
   MENU.classList.toggle('active');
   BURGER_BTN.classList.toggle('active');
+  SHADOW.classList.toggle('active');
+
 };
 
 BURGER_BTN.addEventListener('click', burger);

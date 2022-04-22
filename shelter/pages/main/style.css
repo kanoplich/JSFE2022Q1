@@ -107,6 +107,9 @@ body {
 .header__burger {
   display: none;
 }
+.shadow_page {
+  display: none;
+}
 .header__burger__menu {
   display: none;
 }
@@ -764,11 +767,19 @@ body {
     flex-direction: column;
     transition: all 1s ease 0s;
   }
-  
-  /* .shadow_page {
-    background: url("../../assets/images/start-screen-gradient-background.png") no-repeat 100% 100%;
-    background-size: contain;
-  } */
+  .shadow_page {
+    display: block;
+    right: -200%;
+    top: 0;
+  }
+  .shadow_page.active{
+    top: 0;
+    right: 0;
+    position: absolute;
+    background-image: url("../../assets/images/start-screen-gradient-background.png");
+    width: 100vw;
+    height: 100vh;
+  }
 
   .header__burger__menu.active {
     top: 0;
