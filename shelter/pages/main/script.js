@@ -10,16 +10,36 @@ const burger = () => {
   BODY.classList.toggle('disabled-scroll');
 };
 
-const removeClass = () => {
-  BURGER_BTN.classList.remove('active');
-  MENU.classList.remove('active');
-  SHADOW.classList.remove('active');
-  BODY.classList.remove('disabled-scroll');
-};
-
 BURGER_BTN.addEventListener('click', burger);
 MENU.addEventListener('click', burger);
 SHADOW.addEventListener('click', burger);
 
-burger();
-removeClass();
+
+
+const LEFT_BTN = document.querySelector('.left-button');
+const RIGHT_BTN = document.querySelector('.right-button');
+const CAROUSEL = document.querySelector('#carousel');
+
+
+const moveLeft = () => {
+  CAROUSEL.classList.add('transition-left');
+  LEFT_BTN.removeEventListener('click', moveLeft);
+  RIGHT_BTN.removeEventListener('click', moveRight);
+}
+
+const moveRight = () => {
+  CAROUSEL.classList.add('transition-right');
+  RIGHT_BTN.removeEventListener('click', moveRight);
+  LEFT_BTN.removeEventListener('click', moveLeft);
+}
+
+const stopAnimation = () => {
+  CAROUSEL.classList.remove('transition-left');
+  CAROUSEL.classList.remove('transition-right');
+  LEFT_BTN.addEventListener('click', moveLeft);
+  RIGHT_BTN.addEventListener('click', moveRight);
+}
+
+LEFT_BTN.addEventListener('click', moveLeft);
+RIGHT_BTN.addEventListener('click', moveRight);
+CAROUSEL.addEventListener('animationend', stopAnimation);

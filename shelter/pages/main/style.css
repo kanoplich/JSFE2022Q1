@@ -619,6 +619,36 @@ body {
   height: 310px;
 }
 
+.friends__carousel__wrapper {
+  width: 990px;
+  overflow: hidden;
+}
+
+.friends__carousel {
+  display: flex;
+  position: relative;
+  left: -990px;
+}
+
+@keyframes move-right {
+  from {left: -990px;}
+  to {left: -1980px;}
+}
+
+.transition-right {
+  animation-name: move-right;
+  animation-duration: 1.5s;
+}
+
+@keyframes move-left {
+  from {left: -990px;}
+  to {left: 0px;}
+}
+
+.transition-left {
+  animation-name: move-left;
+  animation-duration: 1.5s;
+}
 
 
 @media (max-width: 1279px){
@@ -661,6 +691,31 @@ body {
   }
   .friends__cards:last-child {
     display: none;
+  }
+  .friends__carousel__wrapper {
+    width: 580px;
+  }
+  .friends__carousel {
+    left: -580px;
+  }
+  @keyframes move-right {
+    from {left: -580px;}
+    to {left: -1160px;}
+  }
+  
+  .transition-right {
+    animation-name: move-right;
+    animation-duration: 1.2s;
+  }
+  
+  @keyframes move-left {
+    from {left: -580px;}
+    to {left: 0px;}
+  }
+  
+  .transition-left {
+    animation-name: move-left;
+    animation-duration: 1.2s;
   }
   .help__icon {
     display: grid;
@@ -884,6 +939,7 @@ body {
     min-height: 791px;
   }
   .friends__body {
+    display: flex;
     flex-flow: wrap;
     justify-content: center;
     margin-right: auto;
@@ -901,7 +957,6 @@ body {
     padding-top: 40px;
   }
   .friends__cards__body {
-    order: -1;
     margin: 20px auto 0 auto;
   }
   .friends__cards:nth-child(2) {
@@ -909,6 +964,32 @@ body {
   }
   .friends__button__primary {
     margin-top: 42px;
+  }
+  .friends__carousel__wrapper {
+    order: -1;
+    width: 270px;
+  }
+  .friends__carousel {
+    left: -270px;
+  }
+  @keyframes move-right {
+    from {left: -270px;}
+    to {left: -540px;}
+  }
+  
+  .transition-right {
+    animation-name: move-right;
+    animation-duration: 1s;
+  }
+  
+  @keyframes move-left {
+    from {left: -270px;}
+    to {left: 0px;}
+  }
+  
+  .transition-left {
+    animation-name: move-left;
+    animation-duration: 1s;
   }
   .help__title {
     text-align: center;
