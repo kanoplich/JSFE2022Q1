@@ -258,6 +258,7 @@ body {
   gap: 90px;
 }
 .friends__cards {
+  cursor: pointer;
   width: 270px;
   height: 435px;
   background-color: #FAFAFA;
@@ -271,26 +272,6 @@ body {
   text-align: center;
   color: #545454;
   margin-top: 30px;
-}
-.cards1 {
-  background-image: url("../../assets/images/katrine.png");
-  border-radius: 9px 9px 0px 0px;
-  width: 270px;
-  height: 270px;
-}
-.cards2 {
-  background-image: url("../../assets/images/jennifer.png");
-  border-radius: 9px 9px 0px 0px;
-  background-color: #FAFAFA;
-  width: 270px;
-  height: 270px;
-}
-.cards3 {
-  background-image: url("../../assets/images/woody.png");
-  border-radius: 9px 9px 0px 0px;
-  background-color: #FAFAFA;
-  width: 270px;
-  height: 270px;
 }
 .friends__cards__button {
   display: flex;
@@ -382,6 +363,82 @@ body {
   background-color: #FDDCC4;
 }
 
+
+/* Popup */
+
+
+.friends__popup__container {
+  display: none;
+}
+.friends__popup__container.active {
+  display: block;
+}
+.friends__popup__shadow {
+  left: 0;
+  position: absolute;
+  background: rgba(41, 41, 41, 0.6);
+  width: 100vw;
+  height: 100vh;
+}
+.friends__popup__body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 29px;
+  background-color: #FFFFFF;
+}
+.friends__popup__image {
+}
+.popup__image {
+  width: 500px;
+  height: 500px;
+}
+.friends__popup__data {
+  display: flex;
+  flex-direction: column;
+}
+.friends__popup__title {
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+}
+.friends__popup__subtitle {
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+}
+.friends__popup__description {
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+}
+.friends__popup__age {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+}
+.friends__popup__inoculations {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+}
+.friends__popup__diseases {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+}
+.friends__popup__parasites {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+}
+.friends__popup__button {
+}
 
 /* Help */
 
@@ -619,6 +676,36 @@ body {
   height: 310px;
 }
 
+.friends__carousel__wrapper {
+  width: 990px;
+  overflow: hidden;
+}
+
+.friends__carousel {
+  display: flex;
+  position: relative;
+  left: -990px;
+}
+
+@keyframes move-right {
+  from {left: -990px;}
+  to {left: -1980px;}
+}
+
+.transition-right {
+  animation-name: move-right;
+  animation-duration: 1.5s;
+}
+
+@keyframes move-left {
+  from {left: -990px;}
+  to {left: 0px;}
+}
+
+.transition-left {
+  animation-name: move-left;
+  animation-duration: 1.5s;
+}
 
 
 @media (max-width: 1279px){
@@ -661,6 +748,31 @@ body {
   }
   .friends__cards:last-child {
     display: none;
+  }
+  .friends__carousel__wrapper {
+    width: 580px;
+  }
+  .friends__carousel {
+    left: -580px;
+  }
+  @keyframes move-right {
+    from {left: -580px;}
+    to {left: -1160px;}
+  }
+  
+  .transition-right {
+    animation-name: move-right;
+    animation-duration: 1.2s;
+  }
+  
+  @keyframes move-left {
+    from {left: -580px;}
+    to {left: 0px;}
+  }
+  
+  .transition-left {
+    animation-name: move-left;
+    animation-duration: 1.2s;
   }
   .help__icon {
     display: grid;
@@ -884,6 +996,7 @@ body {
     min-height: 791px;
   }
   .friends__body {
+    display: flex;
     flex-flow: wrap;
     justify-content: center;
     margin-right: auto;
@@ -901,7 +1014,6 @@ body {
     padding-top: 40px;
   }
   .friends__cards__body {
-    order: -1;
     margin: 20px auto 0 auto;
   }
   .friends__cards:nth-child(2) {
@@ -909,6 +1021,32 @@ body {
   }
   .friends__button__primary {
     margin-top: 42px;
+  }
+  .friends__carousel__wrapper {
+    order: -1;
+    width: 270px;
+  }
+  .friends__carousel {
+    left: -270px;
+  }
+  @keyframes move-right {
+    from {left: -270px;}
+    to {left: -540px;}
+  }
+  
+  .transition-right {
+    animation-name: move-right;
+    animation-duration: 1s;
+  }
+  
+  @keyframes move-left {
+    from {left: -270px;}
+    to {left: 0px;}
+  }
+  
+  .transition-left {
+    animation-name: move-left;
+    animation-duration: 1s;
   }
   .help__title {
     text-align: center;

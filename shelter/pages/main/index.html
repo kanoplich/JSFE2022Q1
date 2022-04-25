@@ -105,22 +105,60 @@
                 <i class="arrow-left"></i>
               </button>
             </div>
-            <div class="friends__cards__body">
-              <a href="#!" class="friends__cards">
-                <div class="cards1"></div>
-                <h3>Katrine</h3>
-                <div class="friends__cards__button">Learn more</div>
-              </a>
-              <a href="#!" class="friends__cards">
-                <div class="cards2"></div>
-                <h3>Jennifer</h3>
-                <div class="friends__cards__button">Learn more</div>
-              </a>
-              <a href="#!" class="friends__cards">
-                <div class="cards3"></div>
-                <h3>Woody</h3>
-                <div class="friends__cards__button">Learn more</div>
-              </a>
+            <div class="friends__carousel__wrapper">
+              <div class="friends__carousel" id="carousel">
+                <div class="friends__cards__body" id="item-left">
+                  <div class="friends__cards">
+                    <img class="cards" src="../../assets/images/freddie.png" alt="freddie">
+                    <h3 class="friends__name">Freddie</h3>
+                    <div class="friends__cards__button">Learn more</div>
+                  </div>
+                  <div class="friends__cards">
+                    <img class="cards" src="../../assets/images/sophia.png" alt="sophia">
+                    <h3 class="friends__name">Sophia</h3>
+                    <div class="friends__cards__button">Learn more</div>
+                  </div>
+                  <div class="friends__cards">
+                    <img class="cards" src="../../assets/images/timmy.png" alt="timmy">
+                    <h3 class="friends__name">Timmy</h3>
+                    <div class="friends__cards__button">Learn more</div>
+                  </div>
+                </div>
+                <div class="friends__cards__body" id="item-active">
+                  <div class="friends__cards">
+                    <img class="cards" src="../../assets/images/katrine.png" alt="katrine">
+                    <h3 class="friends__name">Katrine</h3>
+                    <div class="friends__cards__button">Learn more</div>
+                  </div>
+                  <div class="friends__cards">
+                    <img class="cards" src="../../assets/images/jennifer.png" alt="jennifer">
+                    <h3 class="friends__name">Jennifer</h3>
+                    <div class="friends__cards__button">Learn more</div>
+                  </div>
+                  <div class="friends__cards">
+                    <img class="cards" src="../../assets/images/woody.png" alt="woody">
+                    <h3 class="friends__name">Woody</h3>
+                    <div class="friends__cards__button">Learn more</div>
+                  </div>
+                </div>
+                <div class="friends__cards__body" id="item-right">
+                  <div class="friends__cards">
+                    <img class="cards" src="../../assets/images/freddie.png" alt="freddie">
+                    <h3 class="friends__name">Freddie</h3>
+                    <div class="friends__cards__button">Learn more</div>
+                  </div>
+                  <div class="friends__cards">
+                    <img class="cards" src="../../assets/images/sophia.png" alt="sophia">
+                    <h3 class="friends__name">Sophia</h3>
+                    <div class="friends__cards__button">Learn more</div>
+                  </div>
+                  <div class="friends__cards">
+                    <img class="cards" src="../../assets/images/timmy.png" alt="timmy">
+                    <h3 class="friends__name">Timmy</h3>
+                    <div class="friends__cards__button">Learn more</div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="friends__buttons">
               <button class="right-button">
@@ -131,6 +169,26 @@
           <div class="friends__button__primary">
             <a href="../../pages/pets/index.html" class="button__primary">Get to know the rest</a>
           </div>
+          <!-- <div class="friends__popup__container">
+            <div class="friends__popup__shadow"></div>
+            <div class="friends__popup__body">
+              <div class="friends__popup__image">
+                <img class="popup__image" src="../../assets/images/timmy.png" alt="timmy">
+              </div>
+              <div class="friends__popup__data">
+                <div class="friends__popup__title"></div>
+                <div class="friends__popup__subtitle"></div>
+                <div class="friends__popup__description"></div>
+                <div class="friends__popup__age"></div>
+                <div class="friends__popup__inoculations"></div>
+                <div class="friends__popup__diseases"></div>
+                <div class="friends__popup__parasites"></div>
+              </div>
+              <div class="friends__popup__button">
+                
+              </div>
+            </div>
+          </div> -->
         </div>
       </section>
       <section class="help" id="help">
@@ -204,12 +262,14 @@
           <div class="footer__title__second">
             <h2 class="footer__title">We are waiting <br> for your visit</h2>
             <div class="footer__address__first">
-              <a class="footer__link" href="https://www.google.com/maps/@53.8847208,27.5233291,12z?hl=ru" target="blanc">1 Central Street, Boston <br> (entrance from the store)
+              <a class="footer__link" href="https://www.google.com/maps/@53.8847208,27.5233291,12z?hl=ru"
+                target="blanc">1 Central Street, Boston <br> (entrance from the store)
                 <div class="footer__title__address__image"></div>
               </a>
             </div>
             <div class="footer__address__second">
-              <a class="footer__link" href="https://www.google.com/maps/@53.8847208,27.5233291,12z?hl=ru" target="blanc">18 South Park, London
+              <a class="footer__link" href="https://www.google.com/maps/@53.8847208,27.5233291,12z?hl=ru"
+                target="blanc">18 South Park, London
                 <div class="footer__title__address__image"></div>
               </a>
             </div>
@@ -219,7 +279,7 @@
       </div>
     </footer>
   </div>
-  <script src="script.js"></script>
+  <script type="module" src="script.js"></script>
 </body>
 
 </html>
