@@ -10,7 +10,7 @@ const keyboard = ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', '=
 function init() {
   let out = '';
   for (let i = 0; i < keyboard.length; i++) {
-    out += '<div class="key '+ keyboard_code[i] +'" >' + keyboard[i] + '</div>';
+    out += '<div class="key '+ keyboard_code[i] +'" data="'+ keyboard_code[i] +'">' + keyboard[i] + '</div>';
   }
   document.querySelector('#keyboard').innerHTML = out;
 }
@@ -18,10 +18,10 @@ function init() {
 init();
 
 document.onkeydown = function (event) {
-  console.log('#keyboard .key '+ event.code +'');
-  document.querySelector('#keyboard .key '+ event.code +'').classList.add('active');
+  console.log(`#keyboard .key ${event.code} active`);
+  document.querySelector(`#keyboard .key[data=${event.code}]`).classList.add('active');
 }
 
 document.onkeyup = function (event) {
-  document.querySelector('#keyboard .key '+ event.code +'').classList.remove('active');
+  document.querySelector(`#keyboard .key[data=${event.code}]`).classList.remove('active');
 }

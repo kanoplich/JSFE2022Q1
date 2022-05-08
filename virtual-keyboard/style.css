@@ -38,37 +38,37 @@ body {
   padding: 0 5px 0 5px;
 }
 
-.key.Enter,
-.key.CapsLock,
-.key.ShiftLeft,
-.key.ShiftRight {
+.Enter,
+.CapsLock,
+.ShiftLeft,
+.ShiftRight {
   width: 120px;
   background-color: black;
 }
 
-.key.Space {
+.Space {
   width: 420px;
 }
-.key.Backspace {
+.Backspace {
   width: 140px;
   background-color: black;
 }
 
-.key.Tab {
+.Tab {
   width: 70px;
   background-color: black;
 }
 
-.key.Delete,
-.key.ArrowUp,
-.key.ControlLeft,
-.key.ControlRight,
-.key.MetaLeft,
-.key.AltLeft,
-.key.AltRight,
-.key.ArrowDown,
-.key.ArrowLeft,
-.key.ArrowRight {
+.Delete,
+.ArrowUp,
+.ControlLeft,
+.ControlRight,
+.MetaLeft,
+.AltLeft,
+.AltRight,
+.ArrowDown,
+.ArrowLeft,
+.ArrowRight {
   background-color: black;
 }
 
@@ -77,7 +77,7 @@ body {
 }
 
 .active {
-  background: yellow;
+  background-color: yellow;
 }
 
 .textarea {
