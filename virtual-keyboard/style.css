@@ -72,12 +72,14 @@ body {
   background-color: black;
 }
 
-.key:hover {
+.hover {
   background-color: yellowgreen;
 }
 
 .active {
   background-color: yellow;
+  border-radius: 50px;
+  transition: .3s;
 }
 
 .textarea {
