@@ -78,7 +78,8 @@ body {
 
 .active {
   background-color: green;
-  transition: .3s;
+  border-radius: 30px;
+  transition: .4s;
 }
 
 .textarea {
