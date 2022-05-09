@@ -77,7 +77,7 @@ function displayKeyboard() {
       display.push('►')
     } else if (event.key == 'Enter') {
       display.push('\n');
-    } else if (event.key == 'CapsLock' || event.key == 'Control' || event.key == 'Shift' || event.key == 'Alt' || event.key == 'Delete') {
+    } else if (event.key == 'CapsLock' || event.key == 'Control' || event.key == 'Shift' || event.key == 'Alt' || event.key == 'Delete' || event.key == 'Meta') {
       return;
     } else {
       display.push(event.key);
