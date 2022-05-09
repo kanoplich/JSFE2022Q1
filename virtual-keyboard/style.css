@@ -77,8 +77,7 @@ body {
 }
 
 .active {
-  background-color: yellow;
-  border-radius: 50px;
+  background-color: green;
   transition: .3s;
 }
 
